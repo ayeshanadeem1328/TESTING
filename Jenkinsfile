@@ -6,7 +6,7 @@ pipeline {
   }
   stages {
     stage('Checkout') {
-      steps { git branch: 'main', url: 'https://github.com/USER/REPO.git' }
+      steps { git branch: 'main', url: 'https://github.com/ayeshanadeem1328/TESTING.git' }
     }
     stage('Build Image') {
       steps { sh 'docker build -t $IMAGE:$TAG .' }
